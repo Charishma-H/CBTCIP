@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/todo-list-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.to-do-app h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.to-do-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.row button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ec3134;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.taskItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.taskItem:last-child {
+    border-bottom: none;
+}
+.taskItem.completed{
+    text-decoration: 20px;
+}
+.completedTasks {
+    margin-top: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn{
+    cursor: pointer;
+    font-size: 21px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #735891;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+
+}
+.taskName {
+    width: 200px;
+    white-space: nowrap;  
+    overflow-x: auto; 
+    font-weight: normal;
+    scrollbar-width: none;
+}
+
+.taskName::-webkit-scrollbar {  
+    background: transparent;
+}
+
